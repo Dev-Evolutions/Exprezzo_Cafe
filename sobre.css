@@ -25,3 +25,24 @@
 #sobre h2{
     color: rgb(255, 255, 255);
 }
+
+.sobre-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.sobre-content p{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+}
+
+.exprezzo{
+    width: 50em;
+    border-radius: 7em
+}
