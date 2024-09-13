@@ -1,0 +1,14 @@
+footer{
+    background-color: #FBE2C5;
+    display: flex;
+    gap: 0em;
+    padding: 1em;
+    flex-direction: column;
+    
+}
+
+.patente {
+    font-size: 75%;
+
+}
+ 
