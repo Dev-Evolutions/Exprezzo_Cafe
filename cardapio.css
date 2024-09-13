@@ -2,7 +2,7 @@
     background-color: #fbe2c5;
     display: flex;
     flex-direction: column;
-    gap: 3.5em;
+    gap: 5em;
     padding: 2em;
     height: 100vh;
 }
@@ -11,6 +11,18 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.cardapio-title h2{
+font-size: 5rem;
+}
+
+.cardapio-item h3{
+    font-size: 2.5rem;
+    }
+
+#cardapio p{
+    font-size: 1.5rem;
 }
 
 .cardapio-content{
@@ -29,5 +41,5 @@
 
 .cafe{
     margin-top: 2em;
-    width: 15em;
+    width: 20em;
 }
