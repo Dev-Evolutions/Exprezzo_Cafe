@@ -1,0 +1,45 @@
+#cardapio{
+    background-color: #fbe2c5;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    padding: 2em;
+    height: 100vh;
+}
+
+.cardapio-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardapio-title h2{
+font-size: 5rem;
+}
+
+.cardapio-item h3{
+    font-size: 2.5rem;
+    }
+
+#cardapio p{
+    font-size: 1.5rem;
+}
+
+.cardapio-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+}
+
+.cardapio-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cafe{
+    margin-top: 2em;
+    width: 20em;
+}
