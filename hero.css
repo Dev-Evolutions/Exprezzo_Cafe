@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    filter: brightness(0) invert(1);
+    position: absolute;
+    top: 0em;
+    width: 30em; 
+    z-index: 2; 
+}
+
+h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    margin-bottom: 0.5em;
+}
+
+#botao-hero {
+    padding: 0.625em 1.25em;
+    font-size: 1.2em;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    border-radius: 1em;
+    z-index: 3;
+    transition: background-color 0.3s ease;
+}
+
+#botao-hero:hover {
+    background-color: #ccc;
+}
+
+.text-content {
+    position: absolute;
+    z-index: 3;
+    color: white;
+}
+
+h1, button {
+    z-index: 3; 
+}
