@@ -26,6 +26,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 1.5em;
 }
 
 .unidades-item h3{
@@ -33,7 +34,7 @@
 }
 
 .unidades-item p{
-    font-size: 1,5rem;
+    font-size: 1.75rem; 
 }
 
 
