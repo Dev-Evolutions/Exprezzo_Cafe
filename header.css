@@ -1,4 +1,4 @@
-header{
+header {
     height: 4.5em;
     display: flex;
     align-items: center;
@@ -8,7 +8,7 @@ header{
     background-color: #FBE2C5;
 }
 
-header nav{
+header nav {
     display: flex;
     gap: 3em;
 }
@@ -19,7 +19,7 @@ header nav{
 }
 
 header img {
-    width: 4.5em;
+    width: 6em;
 }
 
 .ancoras a {
@@ -29,20 +29,64 @@ header img {
 }
 
 #visite {
-    background-color: #7e51393b ;
+    background-color: #7e51393b;
     border: none;
 }
+
 html {
     scroll-behavior: smooth;
 }
 
 .ancoras a {
-        color: #000000;
-        text-decoration: none;
-        font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
-    color: #ff6600; 
+    color: #ff6600;
     text-decoration: underline;
+}
+
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    header img {
+        width: 6em;
+    }
+
+    #visite {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        height: 5em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    header nav {
+        gap: 2em;
+    }
+
+    header img {
+        width: 6em;
+    }
+
+    #visite {
+        padding: 0.5em 1em;
+    }
 }
