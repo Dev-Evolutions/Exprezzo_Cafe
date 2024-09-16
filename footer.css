@@ -1,14 +1,37 @@
-footer{
+footer {
     background-color: #FBE2C5;
     display: flex;
     gap: 0em;
     padding: 1em;
     flex-direction: column;
-    
 }
 
 .patente {
     font-size: 75%;
-
 }
- 
+
+
+@media (max-width: 767px) {
+        footer {
+            padding: 1.5em;
+            flex-direction: column;
+            gap: 0.5em;
+        }
+
+        .patente {
+            font-size: 80%;
+        }
+    }
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+        footer {
+            padding: 2em;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .patente {
+            font-size: 70%;
+        }
+    }
