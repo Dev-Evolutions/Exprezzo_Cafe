@@ -32,16 +32,12 @@ header img {
 #visite {
     background-color: #7e51393b;
     border: none;
+    padding: 0.5em 1em;
+    border-radius: 1em;
 }
 
 html {
     scroll-behavior: smooth;
-}
-
-.ancoras a {
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 a:hover {
@@ -49,12 +45,11 @@ a:hover {
     text-decoration: underline;
 }
 
-
 @media (max-width: 767px) {
     header {
         height: auto;
         padding: 1em;
-        justify-content: center; 
+        justify-content: center;
         gap: 1em;
         flex-wrap: wrap;
     }
@@ -64,7 +59,34 @@ a:hover {
     }
 
     header img {
-        width: 5em; 
+        width: 5em;
+    }
+
+    .ancoras a {
+        font-size: 0.9em;
+    }
+
+    #visite {
+        width: auto;
+        font-size: 0.9em;
+        padding: 0.5em 1em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 781px) {
+    header {
+        height: auto; 
+        padding-left: 0.5em; 
+        padding-right: 0.5em;
+        justify-content: center; 
+    }
+
+    header nav {
+        gap: 1.5em; 
+    }
+
+    header img {
+        width: 5.5em; 
     }
 
     .ancoras a {
@@ -72,13 +94,13 @@ a:hover {
     }
 
     #visite {
-        width: auto;
-        font-size: 0.9em; 
         padding: 0.5em 1em;
+        font-size: 0.9em; 
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+
+@media (min-width: 782px) and (max-width: 1024px) {
     header {
         height: 5em;
         padding-left: 1em;
@@ -91,6 +113,10 @@ a:hover {
 
     header img {
         width: 6em;
+    }
+
+    .ancoras a {
+        font-size: 1em; 
     }
 
     #visite {
