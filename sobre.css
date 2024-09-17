@@ -28,6 +28,17 @@
     z-index: 2; 
 }
 
+.sobre-content{
+    position: absolute;
+    width: 40%;
+    display: flex;
+    margin-left: 1.4em;
+    top: 8em;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 3;
+}
 
 
 
