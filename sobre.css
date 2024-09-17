@@ -19,6 +19,15 @@
     z-index: 1;
 }
 
+.sobre-title{
+    position: absolute;
+    top: 3em;
+    font-size: 3rem;
+    color: white;
+    margin-left: 1em;
+    z-index: 2; 
+}
+
 
 
 
