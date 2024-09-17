@@ -55,7 +55,7 @@
 
 .logo-hero {
     position: absolute;
-    top: 38em;
+    top: 34em;
     width: 30em; 
     z-index: 2; 
 }
@@ -78,7 +78,7 @@
 
 .text-content {
     position: absolute;
-    top: 45em;
+    top: 41em;
     z-index: 3;
     color: white;
 }
