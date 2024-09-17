@@ -5,64 +5,131 @@
 }
 
 .hero {
-    position: relative;
     width: 100%;
     height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: hidden;
 }
 
 .background {
+    position: absolute;
+    object-fit: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    position: absolute;
-    top: 0;
-    left: 0;
     z-index: 1;
 }
 
-.logo-hero {
-    filter: brightness(0) invert(1);
-    position: absolute;
-    top: 0em;
-    width: 30em; 
-    z-index: 2; 
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    z-index: 3;
 }
 
-h1 {
-    font-size: 3em;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    z-index: 3;
-    margin-bottom: 0.5em;
+.logo-hero {
+    margin-top: 60%;
+    width: 30em; 
+    z-index: 2; 
 }
 
 #botao-hero {
     padding: 0.625em 1.25em;
     font-size: 1.2em;
-    background-color: #fff;
+    background-color: #C64A58;
     border: none;
     cursor: pointer;
-    color: #000;
+    color: #ffffff;
     border-radius: 1em;
+    transition: 0.3s ease;
     z-index: 3;
-    transition: background-color 0.3s ease;
 }
 
 #botao-hero:hover {
-    background-color: #ccc;
+    background-color: #f86666;
 }
 
 .text-content {
-    position: absolute;
     z-index: 3;
     color: white;
 }
 
-h1, button {
-    z-index: 3; 
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh;
+        padding: 2em 1em;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    .logo-hero {
+        width: 25em;
+        margin-top: 60%; 
+    }
+
+    #botao-hero {
+        padding: 0.5em 1em;
+        font-size: 1em;
+    }
+
+    .text-content {
+        font-size: 1em;
+        padding: 0 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 0.5em;
+    }
+
+    .hero-content {
+        padding: 0.5em;
+    }
+
+    .logo-hero {
+        width: 20em;
+        margin-top: 80%;  
+    }
+
+    #botao-hero {
+        padding: 0.8em 1.2em;
+        font-size: 0.9em;
+    }
+
+    .text-content {
+        font-size: 0.9em;
+        padding: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .hero {
+        padding: 0.5em;
+    }
+
+    .hero-content {
+        padding: 0.25em;
+    }
+
+    .logo-hero {
+        width: 18em;
+        margin-top: 90%; 
+    }
+
+    #botao-hero {
+        padding: 0.3em 0.6em;
+        font-size: 0.8em;
+    }
+
+    .text-content {
+        font-size: 0.8em;
+        padding: 0;
+    }
 }
