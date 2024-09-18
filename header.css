@@ -5,7 +5,7 @@ header {
     justify-content: space-between;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    background-color: #FBE2C5;
+    background-color: #170707;
     flex-wrap: wrap;
 }
 
@@ -24,16 +24,17 @@ header img {
 }
 
 .ancoras a {
-    color: #000000;
+    color: #C64A58;
     text-decoration: none;
     font-weight: bold;
 }
 
 #visite {
-    background-color: #7e51393b;
+    background-color: #FFFCFC;
     border: none;
     padding: 0.5em 1em;
     border-radius: 1em;
+    color: #C64A58;
 }
 
 html {
@@ -45,81 +46,3 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 767px) {
-    header {
-        height: auto;
-        padding: 1em;
-        justify-content: center;
-        gap: 1em;
-        flex-wrap: wrap;
-    }
-
-    header nav {
-        gap: 1em;
-    }
-
-    header img {
-        width: 5em;
-    }
-
-    .ancoras a {
-        font-size: 0.9em;
-    }
-
-    #visite {
-        width: auto;
-        font-size: 0.9em;
-        padding: 0.5em 1em;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 781px) {
-    header {
-        height: auto; 
-        padding-left: 0.5em; 
-        padding-right: 0.5em;
-        justify-content: center; 
-    }
-
-    header nav {
-        gap: 1.5em; 
-    }
-
-    header img {
-        width: 5.5em; 
-    }
-
-    .ancoras a {
-        font-size: 0.9em; 
-    }
-
-    #visite {
-        padding: 0.5em 1em;
-        font-size: 0.9em; 
-    }
-}
-
-
-@media (min-width: 782px) and (max-width: 1024px) {
-    header {
-        height: 5em;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
-    header nav {
-        gap: 2em;
-    }
-
-    header img {
-        width: 6em;
-    }
-
-    .ancoras a {
-        font-size: 1em; 
-    }
-
-    #visite {
-        padding: 0.5em 1em;
-    }
-}

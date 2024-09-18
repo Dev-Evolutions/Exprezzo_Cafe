@@ -1,37 +1,29 @@
 footer {
-    background-color: #FBE2C5;
+    background-color: #201B17; 
+    padding: 2em; 
+    text-align: center; 
+}
+
+.footer-container {
     display: flex;
-    gap: 0em;
-    padding: 1em;
-    flex-direction: column;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.foto {
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 10px; 
 }
 
 .patente {
-    font-size: 75%;
+    margin: 10px 0; 
+    color: white;
 }
 
-
-@media (max-width: 767px) {
-        footer {
-            padding: 1.5em;
-            flex-direction: column;
-            gap: 0.5em;
-        }
-
-        .patente {
-            font-size: 80%;
-        }
-    }
-
-
-@media (min-width: 768px) and (max-width: 1023px) {
-        footer {
-            padding: 2em;
-            flex-direction: column;
-            gap: 1em;
-        }
-
-        .patente {
-            font-size: 70%;
-        }
-    }
+.social-icons img {
+    width: 30px; 
+    height: auto; 
+    margin: 0 10px; 
+}
+  
