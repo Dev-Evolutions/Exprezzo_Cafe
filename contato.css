@@ -42,6 +42,20 @@
     border-radius: 1em;
 }
 
+.contato-mensagem{
+    border-radius: 1em;
+    width: 20em;
+    height: 10em;
+}
+
 .logo-contato{
-    width: 10em;
+    width: 9em;
+}
+
+.btn-enviar{
+    border-radius: 10em;
+    height: 2.5em;
+    width: 7em;
+    font-size: 1.25em;
+    border: none;
 }
