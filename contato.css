@@ -40,16 +40,19 @@
     width: 20em;
     height: 2.25em;
     border-radius: 1em;
+    border: none;
 }
 
 .contato-mensagem{
     border-radius: 1em;
     width: 20em;
-    height: 10em;
+    height: 8em;
+    border: none;
 }
 
 .logo-contato{
     width: 9em;
+    margin-top: 1em;
 }
 
 .btn-enviar{
