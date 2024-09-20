@@ -1,3 +1,9 @@
-localStorage.setItem("email", "exemplo@email.com");
+document.getElementById("contato-form").addEventListener("submit", function(event) {
+    const emailInput = document.getElementById("email-input").value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-const email = document.getElementById("email-input");
+    if (!emailRegex.test(emailInput)) {
+        event.preventDefault(); // Impede o envio do formulário
+        alert("Por favor, insira um endereço de email válido.");
+    }
+});
