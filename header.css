@@ -1,17 +1,21 @@
-header{
+header {
     height: 4.5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    background-color: #FBE2C5;
+    background-color: #170707;
+    flex-wrap: wrap;
+    margin: 0;
+    padding:0;
 }
 
-header nav{
+header nav {
     display: flex;
-    gap: 3em;
-}
+    align-items: center;
+    gap: 2em; 
+}    
 
 .logo {
     display: flex;
@@ -19,16 +23,37 @@ header nav{
 }
 
 header img {
-    width: 4.5em;
+    width: 6em;
 }
 
-.ancoras a {
-    color: #000000;
+nav a, #visite, #login {
+    color: #C64A58;
     text-decoration: none;
     font-weight: bold;
+    background-color: transparent;
+    border: none;
+    padding: 0.5em 1em;
 }
 
-#visite {
-    background-color: #7e51393b ;
+#visite, #login  {
+    background-color: #FFFCFC;
     border: none;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    color: #C64A58;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+#icon-sobre, #icon-cardapio, #icon-local {
+    display: flex;
+    width: 9mm;
+    gap: 0.5em;
 }

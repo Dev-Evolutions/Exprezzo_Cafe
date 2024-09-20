@@ -1,9 +1,9 @@
 #unidades{
-    background-color: #f5ece3;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 10em;
-    height: 100vh;
+    gap: 3em;
+    min-height: 100vh;
 }
 
 .unidades-title{
@@ -11,9 +11,10 @@
     justify-content: center;
 }
 
-.unidades-title{
-    font-size: 5em;
+.unidades-title h2{
+    font-size: 5rem;
 }
+
 .unidades-content{
     display:flex;
     justify-content: space-between;
@@ -26,27 +27,92 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 1.5em;
+    margin: 1em;
 }
 
-.unidade-item h3{
-    font-size: 3rem;
+.unidades-item h3{
+    font-size: 2.5rem;
 }
 
-.unidade-item p{
-    font-size: 2rem;
+.unidades-item p{
+    font-size: 1.5rem; 
 }
-
 
 .cafeteria{
     width: 22em;
-    height: 14em; 
+    height: 14em;
+    border-radius: 15%;
 }
 
 .btn-unidade{
     background-color: #4B4B4B;
     color: white;
     border-radius: 30px;
-    width: 10em;     
-    height: 3em;
+    width: 8em;     
+    height: 2em;
     font-size: 1.5rem;
 }
+
+@media (max-width: 767px) {
+    #unidades {
+        gap: 3em; 
+    }
+    
+    .unidades-title {
+        font-size: 2em; 
+    }
+    
+    .unidades-content {
+        flex-direction: column; 
+        gap: 2em; 
+    }
+    
+    .unidades-item h3 {
+        font-size: 2rem; 
+    }
+    
+    .unidades-item p {
+        font-size: 1.25rem; 
+    }
+    
+    .btn-unidade {
+        width: 8em;
+        height: 2.5em;
+        font-size: 1.2rem; 
+    }
+
+    .cafeteria{
+        width: 100%;
+        height: auto;
+    }
+}
+    
+    
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .unidades-title {
+            font-size: 3.5em;
+        }
+    
+        .unidades-content {
+            flex-direction: column;
+            gap: 2em; 
+        }
+    
+        .unidades-item {
+            flex-basis: 45%; 
+        }
+    
+        .unidades-item h3 {
+            font-size: 2.25rem; 
+        }
+    
+        .unidades-item p {
+            font-size: 1.5rem; 
+        }
+    
+        .cafeteria {
+            width: 100%;
+        height: auto;
+        }
+    }

@@ -1,45 +1,107 @@
-#cardapio{
-    background-color: #fbe2c5;
+#cardapio {
+    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 5em;
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-.cardapio-title{
+.cardapio-title {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.cardapio-title h2{
-font-size: 5rem;
+.cardapio-title h2 {
+    font-size: 5rem;
 }
 
-.cardapio-item h3{
+.cardapio-item h3 {
     font-size: 2.5rem;
-    }
+    white-space: nowrap;
+}
 
-#cardapio p{
+#cardapio p {
     font-size: 1.5rem;
 }
 
-.cardapio-content{
+.cardapio-content {
     display: flex;
     justify-content: space-between;
     gap: 4em;
 }
 
-.cardapio-item{
+.cardapio-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    min-height: 20em; /* Define uma altura mínima para as caixas */
+    flex-grow: 1;     /* Faz com que todos os itens cresçam igualmente */
 }
 
-.cafe{
+.cafe {
     margin-top: 2em;
     width: 20em;
+    border-radius: 15%;
+}
+
+/* Responsivo para telas com max-width: 767px (celulares) */
+@media (max-width: 767px) {
+    #cardapio {
+        padding: 1em;
+        gap: 2em;
+    }
+    
+    .cardapio-title h2 {
+        font-size: 3rem;
+    }
+    
+    .cardapio-item h3 {
+        font-size: 1.8rem;
+    }
+    
+    #cardapio p {
+        font-size: 1.2rem;
+    }
+
+    .cardapio-content {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .cafe {
+        width: 100%;
+    }
+}
+
+/* Responsivo para telas entre 768px e 1024px (tablets) */
+@media (min-width: 768px) and (max-width: 1300px) {
+    #cardapio {
+        padding: 1.5em;
+        gap: 3em;
+    }
+    
+    .cardapio-title h2 {
+        font-size: 4rem;
+    }
+    
+    .cardapio-item h3 {
+        font-size: 2rem;
+    }
+    
+    #cardapio p {
+        font-size: 1.3rem;
+    }
+
+    .cardapio-content {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .cafe {
+        width: 80%;
+    }
 }
