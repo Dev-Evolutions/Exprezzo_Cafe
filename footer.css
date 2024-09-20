@@ -1,37 +1,62 @@
 footer {
-    background-color: #FBE2C5;
+    background-color: #201B17; 
+    padding: 2em; 
+    text-align: center; 
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-container {
     display: flex;
-    gap: 0em;
-    padding: 1em;
-    flex-direction: column;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.foto {
+    width: 150px; 
+    height: auto; 
+    margin-bottom: 10px; 
 }
 
 .patente {
-    font-size: 75%;
+    margin: 10px 0; 
+    color: white;
+}
+
+.social-icons img {
+    width: 30px; 
+    height: auto; 
+    margin: 0 10px; 
 }
 
 
-@media (max-width: 767px) {
-        footer {
-            padding: 1.5em;
-            flex-direction: column;
-            gap: 0.5em;
-        }
-
-        .patente {
-            font-size: 80%;
-        }
+@media (max-width: 1024px) {
+    footer {
+        padding: 1.5em;
     }
 
-
-@media (min-width: 768px) and (max-width: 1023px) {
-        footer {
-            padding: 2em;
-            flex-direction: column;
-            gap: 1em;
-        }
-
-        .patente {
-            font-size: 70%;
-        }
+    .foto {
+        width: 130px;
     }
+
+    .social-icons img {
+        width: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1em;
+    }
+
+    .foto {
+        width: 100px;
+    }
+
+    .social-icons img {
+        width: 20px;
+    }
+}
