@@ -35,6 +35,32 @@ body{
     color: #ffffff;
   }
   
-  .header h2{
+.header h2{
     font-size: 30px;
-  }
+}
+
+.form-content{
+    padding-left: 2px;
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+}
+
+.form-content label{
+    margin-left: 1%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form-content input{
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+.form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
