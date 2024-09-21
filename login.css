@@ -82,6 +82,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: -20px;
 }
 
 .error-message {
@@ -90,7 +91,24 @@ body{
     visibility: hidden; 
   }
   
-  .form-content.error .error-message {
+.form-content.error .error-message {
     visibility: visible; 
-  }
+}
+
+.link-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.link-cadastro a {
+    color: #fae8e8; 
+    text-decoration: none; 
+}
+
+.link-cadastro a:hover {
+    color: #ff3d3d; 
+}
+
   
