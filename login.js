@@ -73,3 +73,23 @@ function errorInput(input, message) {
     textMessage.innerText = message;
     formItem.className = "form-content error";
 }
+
+function validateLogin() {
+    const storedEmail = localStorage.getItem("email");
+    const storedPassword = localStorage.getItem("password");
+  
+    const emailValue = email.value;
+    const passwordValue = password.value;
+  
+    return emailValue === storedEmail && passwordValue === storedPassword;
+}
+  
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+  
+    if (checkForm()) {
+      if (validateLogin()) {
+        window.location.href = "index.html";
+      }
+    }
+});
