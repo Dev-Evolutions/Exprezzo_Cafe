@@ -2,6 +2,10 @@ footer {
     background-color: #201B17; 
     padding: 2em; 
     text-align: center; 
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
 }
 
 .footer-container {
@@ -26,4 +30,33 @@ footer {
     height: auto; 
     margin: 0 10px; 
 }
-  
+
+
+@media (max-width: 1024px) {
+    footer {
+        padding: 1.5em;
+    }
+
+    .foto {
+        width: 130px;
+    }
+
+    .social-icons img {
+        width: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1em;
+    }
+
+    .foto {
+        width: 100px;
+    }
+
+    .social-icons img {
+        width: 20px;
+    }
+}

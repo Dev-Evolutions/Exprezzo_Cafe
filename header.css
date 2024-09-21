@@ -7,12 +7,15 @@ header {
     padding-right: 0.5em;
     background-color: #170707;
     flex-wrap: wrap;
+    margin: 0;
+    padding:0;
 }
 
 header nav {
     display: flex;
-    gap: 3em;
-}
+    align-items: center;
+    gap: 2em; 
+}    
 
 .logo {
     display: flex;
@@ -23,13 +26,16 @@ header img {
     width: 6em;
 }
 
-.ancoras a {
+nav a, #visite, #login {
     color: #C64A58;
     text-decoration: none;
     font-weight: bold;
+    background-color: transparent;
+    border: none;
+    padding: 0.5em 1em;
 }
 
-#visite {
+#visite, #login  {
     background-color: #FFFCFC;
     border: none;
     padding: 0.5em 1em;
@@ -46,3 +52,8 @@ a:hover {
     text-decoration: underline;
 }
 
+#icon-sobre, #icon-cardapio, #icon-local {
+    display: flex;
+    width: 9mm;
+    gap: 0.5em;
+}
