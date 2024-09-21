@@ -64,3 +64,13 @@ body{
     left: 0;
     visibility: hidden;
 }
+
+.botao{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 14px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    
+  }
