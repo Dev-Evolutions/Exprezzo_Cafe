@@ -23,11 +23,11 @@ email.addEventListener("blur", () => {
     checkInputEmail();
   });
   
-  password.addEventListener("blur", () => {
+password.addEventListener("blur", () => {
     checkInputPassword();
-  });
+});
   
-  function checkInputEmail() {
+function checkInputEmail() {
     const emailValue = email.value;
   
     if (emailValue === "") {
@@ -38,9 +38,9 @@ email.addEventListener("blur", () => {
       const formItem = email.parentElement;
       formItem.className = "form-content";
     }
-  }
+}
   
-  function checkInputPassword() {
+function checkInputPassword() {
     const passwordValue = password.value;
   
     if (passwordValue === "") {
@@ -51,4 +51,25 @@ email.addEventListener("blur", () => {
       const formItem = password.parentElement;
       formItem.className = "form-content";
     }
-  }
+}
+
+function checkForm() {
+    checkInputEmail();
+    checkInputPassword();
+  
+    const formItems = form.querySelectorAll(".form-content");
+  
+    const isValid = [...formItems].every((item) => {
+      return item.className === "form-content"; // Se não houver erro
+    });
+  
+    return isValid;
+}
+  
+function errorInput(input, message) {
+    const formItem = input.parentElement;
+    const textMessage = formItem.querySelector("span");
+  
+    textMessage.innerText = message;
+    formItem.className = "form-content error";
+}
