@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+
+#registro{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registro-form{
+    color: white;
+    background-color: #270B08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50em;
+    width: 30em;
+    border-radius:1em;
+    gap: 2em;
+}
+
+.registro-form label{
+    font-size: 1.5rem;
+}
+
+.registro-form h3{
+    font-size: 2rem;
+}
+
+.registro-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.registro-item input{
+    border: none;
+    border-radius:1em;
+    height: 1.75em;
+}
