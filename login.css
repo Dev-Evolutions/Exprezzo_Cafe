@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+body{
+  background: #c4c2c2;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: #270B08;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1%;
+  border-radius: 14px;
+  max-width: 700px;
+  min-height: 50vh;
+  width: 100%;
+  box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+  overflow: hidden;
+}
+
+.header{
+    background-color: #270B08;
+    padding: 24px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+.header h2{
+    font-size: 30px;
+}
+
+.form-content{
+    padding-left: 2px;
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+}
+
+.form-content label{
+    margin-left: 1%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.form-content input{
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+}
+
+.form-content a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.botao{
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 14px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logo{
+    width: 8em;
+}
+  
+.logo-botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    visibility: hidden; 
+  }
+  
+.form-content.error .error-message {
+    visibility: visible; 
+}
+
+.link-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.link-cadastro a {
+    color: #fae8e8; 
+    text-decoration: none; 
+}
+
+.link-cadastro a:hover {
+    color: #ff3d3d; 
+}
+
+  
