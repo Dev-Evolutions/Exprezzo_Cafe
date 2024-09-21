@@ -83,3 +83,14 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    visibility: hidden; 
+  }
+  
+  .form-content.error .error-message {
+    visibility: visible; 
+  }
+  
