@@ -1,0 +1,70 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+#contato{
+    background-color: rgb(248, 247, 246);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 5em;
+}
+
+.contato-title{
+    font-size: 5rem;
+}
+
+.contato-content{
+    background-color: #201B17;
+    color: white;
+    width: 30em;
+    height: 35em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 1.75em;
+}
+
+.contato-item{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.75em;
+    font-size: 1.75rem;
+}
+
+.contato-input{
+    width: 20em;
+    height: 2.25em;
+    border-radius: 1em;
+    border: none;
+}
+
+.contato-mensagem{
+    border-radius: 1em;
+    width: 20em;
+    height: 8em;
+    border: none;
+}
+
+.logo-contato{
+    width: 9em;
+    margin-top: 1em;
+}
+
+.btn-enviar{
+    border-radius: 10em;
+    height: 2.5em;
+    width: 7em;
+    font-size: 1.25em;
+    border: none;
+}
+
+.logo-contato-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

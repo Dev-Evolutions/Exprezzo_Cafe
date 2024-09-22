@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./cardapio.css">
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./contato.css">
+    <script src="./contato.js" defer></script>
     <title>Exprezzo</title>
 </head>
 
@@ -73,7 +75,12 @@
             </div>
             <div class="sobre-content">
                 <div>
-                    <p>A Exprezzo Cafeteria é um refúgio acolhedor no coração da cidade, onde cada visita é uma experiência de conforto e sabor. Nosso espaço foi criado para ser um lugar onde você pode relaxar e desfrutar de momentos preciosos com uma xícara de café perfeitamente preparado ou uma refeição deliciosa. Com uma seleção de pratos cuidadosamente elaborados e bebidas artesanais, oferecemos uma combinação única de qualidade e aconchego. Seja para uma pausa rápida durante o dia ou um encontro agradável com amigos, a Exprezzo é o seu destino para uma pausa perfeita.</p>
+                    <p>A Exprezzo Cafeteria é um refúgio acolhedor no coração da cidade, onde cada visita é uma
+                        experiência de conforto e sabor. Nosso espaço foi criado para ser um lugar onde você pode
+                        relaxar e desfrutar de momentos preciosos com uma xícara de café perfeitamente preparado ou uma
+                        refeição deliciosa. Com uma seleção de pratos cuidadosamente elaborados e bebidas artesanais,
+                        oferecemos uma combinação única de qualidade e aconchego. Seja para uma pausa rápida durante o
+                        dia ou um encontro agradável com amigos, a Exprezzo é o seu destino para uma pausa perfeita.</p>
                 </div>
             </div>
         </section>
@@ -102,7 +109,31 @@
                     <button class="btn-unidade">Visite-nos</button>
                 </div>
             </div>
-
+        </section>
+        <section id="contato">
+            <div class="contato-title">
+                <h2>Contato</h2>
+            </div>
+            <div class="contato-content">
+                <form id="contato-form">
+                    <div class="contato-item">
+                        <label for="nome-input">Nome:</label>
+                        <input type="text" id="nome-input" class="contato-input">
+                    </div>
+                    <div class="contato-item">
+                        <label id="email" for="email-input">Email:</label>
+                        <input type="email" id="email-input" class="contato-input">
+                    </div>
+                    <div class="contato-item">
+                        <label for="mensagem-input">Mensagem:</label>
+                        <textarea id="mensagem-input" class="contato-mensagem" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar" id="btn-enviar-contato">Enviar</button>
+                </form>
+                <div class="logo-contato-container">
+                    <img class="logo-contato" src="./img/logo_cafe_com_escrita_exprezzo.png" alt="Logo Exprezzo Café">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -114,9 +145,7 @@
                 <img src="./img/linkedIn.png" alt="LinkedIn">
                 <img src="./img/unidades.png" alt="Unidades">
             </div>
-        </div>        
+        </div>
     </footer>
-    
 </body>
-
 </html>
