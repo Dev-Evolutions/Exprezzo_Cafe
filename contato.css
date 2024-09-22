@@ -65,6 +65,10 @@
     border: none;
 }
 
+.btn-enviar:hover{
+    background-color: grey;
+}
+
 .logo-contato-container{
     display: flex;
     width: 100%;
@@ -74,5 +78,6 @@
 #email-contato-erro{
     color: red;
     display: none;
-    font-size:1rem;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
