@@ -41,6 +41,7 @@
     height: 2.25em;
     border-radius: 1em;
     border: none;
+    padding-left: 0.75em;
 }
 
 .contato-mensagem{
@@ -48,6 +49,7 @@
     width: 20em;
     height: 8em;
     border: none;
+    padding-left: 0.75em;
 }
 
 .logo-contato{
@@ -67,4 +69,10 @@
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+#email-contato-erro{
+    color: red;
+    display: none;
+    font-size:1rem;
 }
