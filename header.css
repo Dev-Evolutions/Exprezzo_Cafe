@@ -1,3 +1,4 @@
+
 header {
     height: 4.5em;
     display: flex;
@@ -8,14 +9,14 @@ header {
     background-color: #170707;
     flex-wrap: wrap;
     margin: 0;
-    padding:0;
+    padding: 0;
 }
 
 header nav {
     display: flex;
     align-items: center;
-    gap: 2em; 
-}    
+    gap: 2em;
+}
 
 .logo {
     display: flex;
@@ -35,7 +36,7 @@ nav a, #visite, #login {
     padding: 0.5em 1em;
 }
 
-#visite, #login  {
+#visite, #login {
     background-color: #FFFCFC;
     border: none;
     padding: 0.5em 1em;
@@ -52,8 +53,85 @@ a:hover {
     text-decoration: underline;
 }
 
-#icon-sobre, #icon-cardapio, #icon-local {
-    display: flex;
-    width: 9mm;
-    gap: 0.5em;
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 1em;
+    }
+
+    header img {
+        width: 5em;
+    }
+
+    nav a, #visite, #login {
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 0.5em;
+    }
+
+    header img {
+        width: 4em;
+    }
+
+    nav a, #visite, #login {
+        padding: 0.4em;
+        font-size: 0.9em;
+    }
+
+}
+
+@media (max-width: 375px) {
+    header {
+        padding-left: 0.15em;
+        padding-right: 0.15em;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 0.25em;
+        align-items: center;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 0.25em;
+    }
+
+    header img {
+        width: 3em;
+    }
+
+    nav a, #visite, #login {
+        padding: 0.5em;
+        font-size: 0.6em;
+    }
+
 }
