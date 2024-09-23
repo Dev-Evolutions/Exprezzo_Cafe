@@ -42,6 +42,7 @@
     border-radius:1em;
     height: 1.75em;
     width: 20em;
+    padding-left: 1em;
 }
 
 #btn-registro{
@@ -57,4 +58,10 @@
 
 #logo-registro{
     width: 8em;
+}
+
+.erro{
+    color: red;
+    font-size: 0.75rem;
+    display: none;
 }
