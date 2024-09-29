@@ -1,0 +1,15 @@
+{
+  "name": "exprezzo_cafe",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao projeto Exprezzo Cafeteria! Este é um site simples e elegante, desenvolvido apenas com HTML e CSS, para representar uma cafeteria fictícia, destacando seus produtos e ambientes.",
+  "main": "cadastro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
