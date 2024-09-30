@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/sobre.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/./unidades.css">
-    <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/./header.css">
     <link rel="stylesheet" href="./css/./contato.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -30,15 +28,15 @@
     </header>
     
     <main>
-        <section class="hero">
-            <img class="background" src="./img/background-exprezzo.png" alt="foto de fundo café">
-            <div class="hero-content">
-                <img class="logo-hero" src="./img/logo_cafe_so_escrita_exprezzo.png" alt="logo Exprezzo">
-                <div class="text-content">
-                    <button id="botao-hero">Visite-nos</button>
-                </div>
+        <section class="relative w-full h-screen flex justify-center items-center text-center">
+            <img class="absolute object-cover w-full h-full z-10" src="./img/background-exprezzo.png" alt="foto de fundo café">
+            <div class="relative flex justify-center items-center text-center flex-col z-30">
+              <img class="mt-[60%] w-[30em] z-20" src="./img/logo_cafe_so_escrita_exprezzo.png" alt="logo Exprezzo">
+              <div class="z-30 text-white">
+                <button class="px-5 py-2.5 text-[1.2em] bg-[#C64A58] text-white rounded-[1em] cursor-pointer transition duration-300 ease-in-out hover:bg-[#f86666]">Visite-nos</button>
+              </div>
             </div>
-        </section>
+        </section>          
 
         <section class="flex flex-col gap-5 p-3">
             <div class="flex flex-col items-center gap-5">
@@ -66,23 +64,16 @@
             </div>
         </section>
 
-        <section id="sobre">
-            <img class="exprezzo-background" src="./img/background-sobre.png" alt="foto do fundo na sessão sobre">
-            <img class="exprezzo-background2" src="./img/background-sobre2.png" alt="foto do fundo na sessão sobre">
-            <div class="sobre-title">
+        <section class="w-full h-screen flex flex-col justify-center items-start overflow-hidden relative">
+            <img class="absolute w-full h-full z-10 object-cover" src="./img/background-sobre.png" alt="foto do fundo na sessão sobre">
+            <div class="text-6xl text-white mb-4 pl-4 z-20">
                 <h2>Sobre Nós</h2>
             </div>
-            <div class="sobre-content">
-                <div>
-                    <p>A Exprezzo Cafeteria é um refúgio acolhedor no coração da cidade, onde cada visita é uma
-                        experiência de conforto e sabor. Nosso espaço foi criado para ser um lugar onde você pode
-                        relaxar e desfrutar de momentos preciosos com uma xícara de café perfeitamente preparado ou uma
-                        refeição deliciosa. Com uma seleção de pratos cuidadosamente elaborados e bebidas artesanais,
-                        oferecemos uma combinação única de qualidade e aconchego. Seja para uma pausa rápida durante o
-                        dia ou um encontro agradável com amigos, a Exprezzo é o seu destino para uma pausa perfeita.</p>
-                </div>
+            <div class="w-2/5 max-w-full flex flex-col text-2xl text-white z-30 pl-6 text-left" >
+                <p>A Exprezzo Cafeteria é um refúgio acolhedor no coração da cidade, onde cada visita oferece conforto e sabor. O espaço foi criado para que você possa relaxar enquanto desfruta de um café perfeitamente preparado ou uma refeição deliciosa. Com uma seleção de pratos cuidadosamente elaborados e bebidas artesanais, proporcionamos uma experiência única de qualidade. Seja para uma pausa rápida durante o dia ou um agradável encontro com amigos, a Exprezzo é o seu destino ideal. </p>
             </div>
         </section>
+        
 
         <section id="unidades">
             <div class="unidades-title">
