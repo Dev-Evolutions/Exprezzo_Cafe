@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/./unidades.css">
     <link rel="stylesheet" href="./css/./cardapio.css">
-    <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/./header.css">
     <link rel="stylesheet" href="./css/./contato.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Exprezzo</title>
 </head>
 
@@ -30,15 +30,15 @@
     </header>
     
     <main>
-        <section class="hero">
-            <img class="background" src="./img/background-exprezzo.png" alt="foto de fundo café">
-            <div class="hero-content">
-                <img class="logo-hero" src="./img/logo_cafe_so_escrita_exprezzo.png" alt="logo Exprezzo">
-                <div class="text-content">
-                    <button id="botao-hero">Visite-nos</button>
-                </div>
+        <section class="relative w-full h-screen flex justify-center items-center text-center">
+            <img class="absolute object-cover w-full h-full z-10" src="./img/background-exprezzo.png" alt="foto de fundo café">
+            <div class="relative flex justify-center items-center text-center flex-col z-30">
+              <img class="mt-[60%] w-[30em] z-20" src="./img/logo_cafe_so_escrita_exprezzo.png" alt="logo Exprezzo">
+              <div class="z-30 text-white">
+                <button class="px-5 py-2.5 text-[1.2em] bg-[#C64A58] text-white rounded-[1em] cursor-pointer transition duration-300 ease-in-out hover:bg-[#f86666]">Visite-nos</button>
+              </div>
             </div>
-        </section>
+        </section>          
 
         <section id="cardapio">
             <div class="cardapio-title">
