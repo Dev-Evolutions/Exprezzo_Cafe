@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/footer.css">
-    <!-- <link rel="stylesheet" href="./css/sobre.css"> -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/./unidades.css">
-    <link rel="stylesheet" href="./css/./cardapio.css">
     <link rel="stylesheet" href="./css/./header.css">
     <link rel="stylesheet" href="./css/./contato.css">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -40,28 +38,28 @@
             </div>
         </section>          
 
-        <section id="cardapio">
-            <div class="cardapio-title">
-                <h2>Cardápio</h2>
-                <p>Delicias e conforto em cada escolha do nosso caradápio</p>
+        <section class="flex flex-col gap-5 p-3">
+            <div class="flex flex-col items-center gap-5">
+                <h2 class="text-7xl">Cardápio</h2>
+                <p class="text-2xl">Delicias e conforto em cada escolha do nosso caradápio</p>
             </div>
-            <div class="cardapio-content">
-                <div class="cardapio-item">
-                    <h3>Café Latte - R$10,00</h3>
-                    <p>Espresso suave combinado com leite vaporizado, coberto com uma leve camada de espuma.</p>
-                    <img class="cafe" src="./img/cafeLate.jpg" alt="Foto Latte">
+            <div class="flex flex-col justify-between gap-4 space-x-10">
+                <div class=" flex flex-col items-center text-center gap-6">
+                    <h3 class="text-3xl">Café Latte - R$10,00</h3>
+                    <p class="text-2xl">Espresso suave combinado com leite vaporizado, coberto com uma leve camada de espuma.</p>
+                    <img class="w-1/4 rounded-2xl" src="./img/cafeLate.jpg" alt="Foto Latte">
                 </div>
-                <div class="cardapio-item">
-                    <h3>Cappuccino - R$12,00</h3>
-                    <p>Uma mistura perfeita de espresso, leite vaporizado e espuma densa, finalizada com uma pitada de
+                <div class="flex flex-col items-center  text-center gap-4">
+                    <h3 class="text-3xl">Cappuccino - R$12,00</h3>
+                    <p class="text-2xl">Uma mistura perfeita de espresso, leite vaporizado e espuma densa, finalizada com uma pitada de
                         cacau.</p>
-                    <img class="cafe" src="./img/cappucino.jpg" alt="Foto Cappucino">
+                    <img class="w-1/4 rounded-2xl" src="./img/cappucino.jpg" alt="Foto Cappucino">
                 </div>
-                <div class="cardapio-item">
-                    <h3>Irish Coffee - R$18,00</h3>
-                    <p>Uma combinação de café quente, uísque irlandês e açúcar, finalizada com uma camada de chantilly
+                <div class="flex flex-col items-center text-center gap-4">
+                    <h3 class="text-3xl">Irish Coffee - R$18,00</h3>
+                    <p class="text-2xl">Uma combinação de café quente, uísque irlandês e açúcar, finalizada com uma camada de chantilly
                         suave. </p>
-                    <img class="cafe" src="./img/cafe-irlandes.jpg" alt="Foto do Café Irlandês">
+                    <img class="w-1/4 rounded-2xl" src="./img/cafe-irlandes.jpg" alt="Foto do Café Irlandês">
                 </div>
             </div>
         </section>
