@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- <link rel="stylesheet" href="./css/cadastro.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gerador-validador-cpf@5.0.2/dist/CPF.umd.min.js"></script>
+</head>
+<body >
+    <section id="registro" class=" flex items-center justify-center py-8">
+            <form class="registro-form text-white bg-[#270B08] flex flex-col items-center h-[69em] w-[30em] rounded-xl gap-8" action=".">
+                <h3 class="text-2xl">Registre-se:</h3>
+                <div class="registro-item flex flex-col">
+                    <label for="nome-registro" class="text-xl">Nome:</label>
+                    <input type="text" id="nome-registro" required placeholder="Nome" class="w-[20em] h-[1.75em] pl-4 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500">
+                </div>
+
+                <div class="registro-item flex flex-col">
+                    <label for="email-registro" class="text-xl">E-mail:</label>
+                    <input id="email-registro" type="email" placeholder="E-mail" class="h-[1.75em] w-[20em] p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500">
+                    <span id="email-erro" class="erro text-red-500 text-xs hidden">E-mail inválido</span>
+                </div>
+
+                <div class="registro-item flex flex-col">
+                    <label for="cpf-registro" class="text-xl">CPF:</label>
+                    <input id="cpf-registro" type="text" placeholder="CPF" class="h-[1.75em] w-[20em] pl-4 p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500">
+                    <span id="cpf-erro" class="erro text-red-500 text-xs hidden">CPF inválido</span>
+                </div>
+
+                <div class="registro-item flex flex-col">
+                    <label for="cnpj-registro" class="text-xl">CNPJ:</label>
+                    <input id="cnpj-registro" type="text" placeholder="CNPJ" class="h-[1.75em] w-[20em] p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500">
+                    <span id="cnpj-erro" class="erro text-red-500 text-xs hidden">CNPJ inválido</span>
+                </div>
+
+                <div class="registro-item flex flex-col">
+                    <label for="telefone-registro" class="text-xl">N° de telefone:</label>
+                    <input id="telefone-registro" type="text" placeholder="Telefone" class="h-[1.75em] w-[20em] p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500">
+                    <span id="telefone-erro" class="erro text-red-500 text-xs hidden">Telefone inválido</span>
+                </div>
+
+                <div class="registro-item flex flex-col">
+                    <label for="cep-registro" class="text-xl">CEP:</label>
+                    <input id="cep-registro" type="text" placeholder="CEP" class="h-[1.75em] w-[20em] p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500">
+                    <span id="cep-erro" class="erro text-red-500 text-xs hidden">CEP inválido</span>
+                </div>
+
+                <div class="registro-item flex flex-col">
+                    <label for="registro-senha" class="text-xl">Senha:</label>
+                    <input id="registro-senha" type="password" placeholder="Senha" class="h-[1.75em] w-[20em] p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500">
+                    <span id="senha-erro" class="erro text-red-500 text-xs hidden">A senha deve ter no mínimo 6 caracteres e as senhas devem coincidir!</span>
+                </div>
+                
+                <div class="registro-item flex flex-col">
+                    <label for="confirmar-senha-registro" class="text-xl">Confirmar Senha:</label>
+                    <input id="confirmar-senha-registro" type="password" placeholder="Confirmar Senha" class="h-[1.75em] w-[20em] p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-500">
+                    <span id="confirmar-senha-erro" class="erro text-red-500 text-xs hidden">Senhas diferentes</span>
+                </div>
+                <a href="login.html" class="text-[#fae8e8] no-underline hover:text-red-600">Se você já possui login. Clique aqui!</a>
+                <button id="btn-registro" type="button" class="rounded-full h-[3em] w-[9em] border-none bg-white text-black hover:bg-gray-500">Registrar</button>
+                <img id="logo-registro" src="./img/logo_cafe_com_escrita_exprezzo.png" alt="logo exprezzo" class="w-[8em]">
+            </form>
+        
+    </section>
+
+    <script src="./js/cadastro.js"></script>
+</body>
+</html>
+
+
+
