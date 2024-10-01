@@ -103,7 +103,7 @@
             <div class="text-5xl">
                 <h2>Contato</h2>
             </div>
-            <div class="bg-[#201B17] text-white w-64 rounded-xl p-4">
+            <div class="bg-[#201B17] text-white w-64 rounded-xl p-4 lg:w-80">
                 <form id="contato-form" class="flex flex-col gap-5">
                     <div class="flex flex-col pb-1 text-md">
                         <label for="nome-input">Nome:</label>
@@ -112,11 +112,11 @@
                     <div class="flex flex-col pb-1 text-md">
                         <label id="email" for="email-input">Email:</label>
                         <input id="email-input" class="text-black rounded-lg pl-2">
-                        <span id="email-contato-erro" class=" text-red-600 text-xs mt-1">Por favor, insira um endereço de email válido</span>
+                        <span id="email-contato-erro" class=" text-red-600 text-xs mt-1 hidden">Por favor, insira um endereço de email válido</span>
                     </div>
-                    <div class="contato-item">
+                    <div class="flex flex-col pb-1 text-md">
                         <label for="mensagem-input">Mensagem:</label>
-                        <textarea id="mensagem-input" class="text-black rounded-lg pl-2 w-56" rows="4" required></textarea>
+                        <textarea id="mensagem-input" class="text-black rounded-lg pl-2 w-56 lg:w-72" rows="4" required></textarea>
                     </div>
                     <div class="flex flex-col items-center">
                         <button type="submit" class="mb-2 rounded-xl bg-[#C64A58] w-20" id="btn-enviar-contato">Enviar</button>
