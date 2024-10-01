@@ -99,24 +99,24 @@
                 </div>
             </div>
         </section>
-        <section id="contato" class="bg-slate-100 flex flex-col items-center gap-9">
-            <div class="contato-title">
+        <section id="contato" class="bg-slate-100 flex flex-col items-center gap-9 p-4">
+            <div class="text-5xl">
                 <h2>Contato</h2>
             </div>
-            <div class="contato-content">
+            <div class="bg-[#201B17] text-white w-64 rounded-xl p-4">
                 <form id="contato-form">
-                    <div class="contato-item">
+                    <div class="flex flex-col pb-1 text-md">
                         <label for="nome-input">Nome:</label>
-                        <input type="text" id="nome-input" class="contato-input">
+                        <input type="text" id="nome-input" class="text-black rounded-lg">
                     </div>
                     <div class="contato-item">
                         <label id="email" for="email-input">Email:</label>
-                        <input id="email-input" class="contato-input">
+                        <input id="email-input" class="text-black rounded-lg">
                         <span id="email-contato-erro">Por favor, Insira um endereço de email válido</span>
                     </div>
                     <div class="contato-item">
                         <label for="mensagem-input">Mensagem:</label>
-                        <textarea id="mensagem-input" class="contato-mensagem" rows="4" required></textarea>
+                        <textarea id="mensagem-input" class="text-black rounded-lg" rows="4" required></textarea>
                     </div>
                     <button type="submit" class="btn-enviar" id="btn-enviar-contato">Enviar</button>
                 </form>
