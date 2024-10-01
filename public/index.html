@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/./unidades.css">
     <link rel="stylesheet" href="./css/./header.css">
-    <!-- <link rel="stylesheet" href="./css/./header.css"> -->
     <link rel="stylesheet" href="./css/./contato.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Exprezzo</title>
@@ -52,31 +51,29 @@
             </div>
         </section>          
 
-        <section class="flex flex-col gap-5 p-3">
+        <section class="flex flex-col gap-5 p-3 text-center">
             <div class="flex flex-col items-center gap-5">
                 <h2 class="text-7xl">Cardápio</h2>
-                <p class="text-2xl">Delicias e conforto em cada escolha do nosso caradápio</p>
+                <p class="text-2xl">Delícias e conforto em cada escolha do nosso cardápio</p>
             </div>
-            <div class="flex flex-col justify-between gap-4 space-x-10">
-                <div class=" flex flex-col items-center text-center gap-6">
+            <div class="flex flex-col lg:flex-row justify-between gap-8">
+                <div class="flex flex-col items-center text-center gap-4 w-full lg:w-1/3">
+                    <img class="w-3/4 lg:w-full rounded-2xl" src="./img/cafeLate.jpg" alt="Foto Latte">
                     <h3 class="text-3xl">Café Latte - R$10,00</h3>
                     <p class="text-2xl">Espresso suave combinado com leite vaporizado, coberto com uma leve camada de espuma.</p>
-                    <img class="w-3/4 rounded-2xl" src="./img/cafeLate.jpg" alt="Foto Latte">
                 </div>
-                <div class="flex flex-col items-center  text-center gap-4">
+                <div class="flex flex-col items-center text-center gap-4 w-full lg:w-1/3">
+                    <img class="w-3/4 lg:w-full rounded-2xl" src="./img/cappucino.jpg" alt="Foto Cappucino">
                     <h3 class="text-3xl">Cappuccino - R$12,00</h3>
-                    <p class="text-2xl">Uma mistura perfeita de espresso, leite vaporizado e espuma densa, finalizada com uma pitada de
-                        cacau.</p>
-                    <img class="w-3/4 rounded-2xl" src="./img/cappucino.jpg" alt="Foto Cappucino">
+                    <p class="text-2xl">Uma mistura perfeita de espresso, leite vaporizado e espuma densa, finalizada com uma pitada de cacau.</p>
                 </div>
-                <div class="flex flex-col items-center text-center gap-4">
+                <div class="flex flex-col items-center text-center gap-4 w-full lg:w-1/3">
+                    <img class="w-3/4 lg:w-full rounded-2xl" src="./img/cafe-irlandes.jpg" alt="Foto do Café Irlandês">
                     <h3 class="text-3xl">Irish Coffee - R$18,00</h3>
-                    <p class="text-2xl">Uma combinação de café quente, uísque irlandês e açúcar, finalizada com uma camada de chantilly
-                        suave. </p>
-                    <img class="w-3/4 rounded-2xl" src="./img/cafe-irlandes.jpg" alt="Foto do Café Irlandês">
+                    <p class="text-2xl">Uma combinação de café quente, uísque irlandês e açúcar, finalizada com uma camada de chantilly suave.</p>
                 </div>
             </div>
-        </section>
+        </section>               
 
         <section class="w-full h-screen flex flex-col justify-center items-start overflow-hidden relative">
             <img class="absolute w-full h-full z-10 object-cover" src="./img/background-sobre.png" alt="foto do fundo na sessão sobre">
