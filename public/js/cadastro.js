@@ -37,9 +37,9 @@ function validarEmail(email) {
 }
 
 function validarCPF(cpf) {
-    const regex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
-    return regex.test(cpf);
+    return CPF.validate(cpf); // Valida usando a biblioteca externa
 }
+
 
 function validarCNPJ(cnpj) {
     const regex = /^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$/;
@@ -96,10 +96,10 @@ document.getElementById('btn-registro').addEventListener('click', function (even
     }
 
     if (!validarCPF(cpf)) {
-        document.getElementById('cpf-erro').textContent = "CPF inválido! Formato esperado: 000.000.000-00";
+        document.getElementById('cpf-erro').textContent = "CPF inválido!";
         document.getElementById('cpf-erro').classList.remove("hidden");
         isValid = false;
-    }
+    }  
 
     if (!validarCNPJ(cnpj)) {
         document.getElementById('cnpj-erro').textContent = "CNPJ inválido! Formato esperado: 00.000.000/0000-00";
