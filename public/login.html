@@ -5,38 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/login.css" />
+  <!-- <link rel="stylesheet" href="./css/login.css" /> -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Login</title>
 </head>
 
-<body>
+<body class="bg-gray-300 w-full min-h-screen flex justify-center items-center">
 
-  <div class="container">
-    <section class="header">
-      <h2>Login</h2>
+  <div class="bg-[#270B08] flex flex-col items-center justify-center pb-1 rounded-lg max-w-[700px] min-h-[50vh] w-full box-border shadow-lg overflow-hidden">
+    <section class="bg-[#270B08] p-6 text-center text-white">
+      <h2 class="text-2xl">Login</h2>
     </section>
 
     <form id="form" class="form">
-      <div class="form-content">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Digite o seu email..." required />
+      <div class="pb-4 mb-2 pl-1">
+        <label for="email" class="mb-2 ml-1 text-white">Email</label>
+        <input type="email" id="email" placeholder="Digite o seu email..." required class="w-full rounded-md p-2 border-2 border-gray-300" />
+        <span class="text-red-500 text-xs invisible">O email é obrigatório.</span>
       </div>
-      <div class="form-content">
-        <label for="password">Senha:</label>
-        <input type="password" id="password" placeholder="Digite sua senha..." required />
-        <span class="error-message">Mínimo 6 caracteres.</span>
+      <div class="pb-4 mb-2 pl-1">
+        <label for="password" class="mb-2 ml-1 text-white">Senha:</label>
+        <input type="password" id="password" placeholder="Digite sua senha..." required class="w-full rounded-md p-2 border-2 border-gray-300" />
+        <span class="text-red-500 text-xs invisible">Mínimo 6 caracteres.</span>
       </div>
-      <div class="link-cadastro">
-        <a href="cadastro.html">Se você não possui login, cadastre-se aqui!</a>
+      <div class="flex items-center justify-center mt-[-5px]">
+        <a href="cadastro.html" class="text-[#fae8e8] no-underline hover:text-red-600">Se você não possui login, cadastre-se aqui!</a>
       </div>
-      <div class="logo-botao">
-        <button class="botao" type="submit">Login</button>
-        <img class="logo" src="./img/logo_cafe_com_escrita_exprezzo.png" alt="logo cafeteria exprezzo">
+      <div class="flex items-center justify-center mb-[-5px]">
+        <button class="bg-white text-black rounded-xl py-2 px-4 text-base cursor-pointer" type="submit">Login</button>
+        <img class="w-32" src="./img/logo_cafe_com_escrita_exprezzo.png" alt="logo cafeteria exprezzo">
       </div>
     </form>
-  </div>
-
-  <script src="./js/login.js"></script>
+    
+    <script src="./js/login.js"></script>
+    
 </body>
 
 </html>
