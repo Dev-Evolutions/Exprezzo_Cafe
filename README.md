@@ -33,4 +33,5 @@ https://main.d1chyxdatzjk3k.amplifyapp.com/
 
 ## 🛠️ Tecnologias Utilizadas
 
-![Static Badge](https://raw.githubusercontent.com/anaselgarhy/cool-badges/master/svg/dev/languages/html.svg) ![Static Badge](https://raw.githubusercontent.com/anaselgarhy/cool-badges/master/svg/dev/languages/css3.svg) ![Static Badge](https://raw.githubusercontent.com/anaselgarhy/cool-badges/master/svg/dev/languages/js.svg)
+![Static Badge](https://raw.githubusercontent.com/anaselgarhy/cool-badges/master/svg/dev/languages/html.svg) [![Static Badge](https://raw.githubusercontent.com/anaselgarhy/cool-badges/master/svg/dev/languages/css3.svg)](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Static Badge](https://raw.githubusercontent.com/anaselgarhy/cool-badges/master/svg/dev/languages/js.svg)
+![Static Badge](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Static Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
