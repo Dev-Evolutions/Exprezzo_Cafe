@@ -6,23 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/./header.css">
+    <!-- <link rel="stylesheet" href="./css/./header.css"> -->
     <link rel="stylesheet" href="./css/./contato.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Exprezzo</title>
 </head>
 
 <body>
-    <header>
+    <header class="flex flex-wrap items-center justify-between p-4 bg-[#170707] shadow-md">
         <div class="logo">
-            <img src="./img/logo_cafe_com_escrita_exprezzo.png">
+            <img src="./img/logo_cafe_com_escrita_exprezzo.png" class="h-16">
         </div>
-        <nav class="ancoras">
-            <a href="#cardapio">Cardápio</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#unidades">Unidades</a>
-            <button id="visite">Visite-nos</button>
-            <button id="login"><a href="./login.html">Login</a></button>
+        <nav class="flex space-x-4 items-center">
+            <a href="#cardapio" class="text-[#C64A58] hover:text-white">Cardápio</a>
+            <a href="#sobre" class="text-[#C64A58] hover:text-white">Sobre</a>
+            <a href="#unidades" class="text-[#C64A58] hover:text-white">Unidades</a>
+            <button id="visite" class="bg-white text-[#C64A58] px-3 py-1 rounded hover:bg-gray-400">Visite-nos</button>
+            <button id="login" class="bg-white text-[#C64A58] px-4 py-1 rounded hover:bg-gray-400">
+                <a href="./login.html">Login</a>
+            </button>
         </nav>
     </header>
     
